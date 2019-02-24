@@ -4,7 +4,7 @@ function myFunction() {
   alert("select a key and check to see if you're a psychic!");
 }
 
-//define variables for game play
+//define variables 
 var winCount = 1;
 var lossCount = 0;
 var guessesRemaining = 10;
@@ -21,7 +21,7 @@ var computerChoice = alphabet[randomIndex];
 
 console.log(computerChoice);
 
-// add a listener for the user to press a key
+
 document.onkeyup = function(event) {
   var userChoice = event.key;
   
@@ -67,6 +67,3 @@ document.onkeyup = function(event) {
     }
 } </script>
 
-</body>
-
-</html>

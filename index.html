@@ -4,7 +4,8 @@
 
 <head>
   <title>The Pyschic Game</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="Assets/css/stylesheet.css">
+  <script src="main.js"></script>
 </head>
 
 <body>
@@ -87,7 +88,7 @@ function myFunction() {
   alert("select a key and check to see if you're a psychic!");
 }
 
-//define variables for game play
+//define variables
 var winCount = 1;
 var lossCount = 0;
 var guessesRemaining = 10;
@@ -98,13 +99,13 @@ var alphabet =
     ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q"
     ,"r","s","t","u","v","w","x","y","z"];
 
-// set up the computer to pick a random indexed value from aray
+// set up the computer to pick a random value
 var randomIndex = Math.floor(Math.random() * alphabet.length);
 var computerChoice = alphabet[randomIndex];
 
 console.log(computerChoice);
 
-// add a listener for the user to press a key
+// add action 
 document.onkeyup = function(event) {
   var userChoice = event.key;
   
